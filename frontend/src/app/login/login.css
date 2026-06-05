@@ -1,0 +1,61 @@
+.cont-main{
+    min-width: fit-content;
+    height: 100dvh;
+    min-height: fit-content;
+
+    display:grid;
+    grid-template-columns:  1fr;
+    grid-template-rows:     1.25fr 2fr;
+    grid-template-areas: "logo" "form";
+
+}
+
+#div-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div-logo img{
+    height: 60%;
+    transition: transform 0.3s ease;
+}
+
+#div-logo img:hover{
+    transform: scale(1.05);
+    
+}
+#div-form{
+    grid-area: form;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-form-cont{
+    width: 75%;
+    max-width: 800px;
+    height: 75%;
+    min-height: 222px;
+    display:grid;
+    place-items: center;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:     1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+
+    text-align: center;
+    align-items: center;
+    background-color: #0000005a;
+}
+#div-form-cont > *{
+    grid-column: span 2;
+}
+#div-form-cont > *:nth-last-child(-n+2) {
+    grid-column: span 1;
+}
+
+input, button{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+.cont-ind{
+    min-width: fit-content;
+    height: 100dvh;
+    min-height: fit-content;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont-ind-info{
+    width: 60%;
+    height: 70%;
+    min-height: 320px;
+    display: grid;
+    text-align: center;
+    background-color: #00000077;
+}
+
+h1{
+    font-size: 6rem;
+    margin-top:3rem;
+}
+.p-text{
+    font-size: 4rem;
+}

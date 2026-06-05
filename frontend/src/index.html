@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    @font-face{
+      font-family: 'Minecraft';
+      src: url('fonts/Minecraft.ttf') format('truetype');
+      font-weight: lighter;
+      font-style: normal;
+    }
+    html{
+      font-size: 62.5%;
+      min-width: 320px;
+      min-height: 464px;
+    }
+    html, body{
+      width: 100%;
+    }
+    *{
+      margin: 0%;
+      padding: 0%;
+      font-family: 'Minecraft', sans-serif;
+      letter-spacing: 0.2rem;
+    }
+    p, label, input, button{
+      font-size: 2rem;
+      text-shadow: 0.2rem 0.2rem 0 #3f3f3f;
+      color: #E0E0E0;
+    }
+
+    input, button{
+      text-align: center;
+      border: none;
+
+      background-color: #6F6F6F;
+      outline: 2px solid #000;
+      box-shadow: 
+      inset 0 2px 0 0 #AAAAAA,
+      inset 0 -2px 0 0 #565656,
+      inset 3px 0 0 0 #AAAAAA,
+      inset -3px 0 0 0 #565656;
+    }
+    button{
+        cursor: pointer;
+    }
+    button:hover, button:focus, input:focus{
+
+      outline: 2px solid #ffffff;
+    }
+    button:active{
+      background-color: #565656;
+      box-shadow: 
+      inset 0 2px 0 0 #565656,
+      inset 0 -2px 0 0 #AAAAAA,
+      inset 3px 0 0 0 #565656,
+      inset -3px 0 0 0 #AAAAAA;
+    }
+    .cont-main{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url('images/back.jpg');
+      background-size: cover;
+      background-attachment: fixed; 
+    }
+
+    .cont-ind{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url('images/back2.jpg');
+      background-size: cover;
+      background-attachment: fixed; 
+    }
+
+    input{
+      background-color: #2a2a2a;
+    }
+    input::placeholder{
+      color: #909090;
+    }
+    h1{
+      font-size: 3.2rem;
+      color: #E0E0E0;
+      text-shadow: 0.4rem 0.4rem 0 #3f3f3f;
+    }
+    #info{
+      position: fixed;
+      top:2rem;
+      left: 2rem;
+      z-index: 10;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <p id="info">Alumno: Jorge Antonio Macias Castro <br>Fecha: 5 de mayo de 2026 <br>Modulo: Software de Aplicación</p>
+  <app-root>
+    
+  </app-root>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<header>
+      <link rel="stylesheet" href="inicio.css">
+      <title>Bienvenido</title>
+</header>
+<div class="cont-ind">
+  <div id="cont-ind-info">
+    <h1>¡Bienvenido!</h1>
+    <div *ngIf="usuarioData">
+      <p class="p-text">Hola <strong style="text-decoration:underline">{{ usuarioData.nombre }}</strong>, has iniciado sesión correctamente.</p>
+      <p class="p-text">ID de usuario: <br>{{ usuarioData.id }}</p>
+      <p class="p-text">Correo:        <br>{{ usuarioData.email}}</p>
+    </div>
+    <button (click)="cerrarSesion()">Cerrar Sesión</button>
+  </div>
+</div>

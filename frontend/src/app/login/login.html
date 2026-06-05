@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<header>
+      <link rel="stylesheet" href="login.css">
+      <title>Jorge Login</title>
+</header>
+<main class="login-container cont-main">
+      <div id="div-logo" class="div-logo">
+            <img id="logo" src="images/Logo.png" alt="Logo">
+      </div>
+      <div id="div-form">
+      <div id="div-form-cont">
+
+            <label for="usuario"><h1 id="div-form-title" class="title ">LOGIN</h1></label>
+            <label for="usuario" class="div-form-label">Nombre de usuario:</label>
+            <input id="usuario" class="div-form-input" type="text" placeholder="Usuario" [(ngModel)]="usuario">
+            <label for="password" class="div-form-label">Contraseña:</label>
+            <input id="password" class="div-form-input" type="password" placeholder="Contraseña" [(ngModel)]="password">
+
+            <button (click)="clear()" type="button" class="div-form-button1">Reestablecer</button>
+            <button (click)="login()" class="div-form-button2">Entrar</button>
+      </div>
+      </div>
+</main>
